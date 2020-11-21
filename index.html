@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js" integrity="sha512-rCgfeoOQxpi926f8I0zdBVUY9q/2SKXqrdIy23yEPuvWvJ8/jwDqhQ0eJJhS9L8ySZsmbEQp3LCgPTiaAk5WVw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     <style>
         .float{
             position:fixed;
@@ -39,6 +40,14 @@
         .textoPrimario {
             text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 3px 3px 6px greenyellow, 3px 3px 6px greenyellow;
         }
+        .textoPrincipios {
+            text-shadow: 1px 1px rgb(59, 233, 59);
+        }
+        .botaoAlertaCompra {
+            position: absolute;
+            top: 10%;
+            left: 25%;
+        }
         html, body { overflow-x: hidden; }
     </style>
 </head>
@@ -52,8 +61,8 @@
                     <div class="col-2">
                         <img src="img/logo.png" alt="logo" width="150px" height="150px">
                     </div>
-                    <div class="col-6 align-self-center text-right">
-                        <a href="https://mpago.la/1VTXgcb" class="text-white lead" style="text-shadow: 2px 2px 5px red, 4px 4px 6px yellow;"><img src="img/acesso_lista.png" alt="Acessar" width="431px" height="117px"></a>
+                    <div class="col-10 align-self-center text-right" data-aos="zoom-in-left">
+                        <a href="#" onclick="window.open('https://mpago.la/1VTXgcb');return false;" class="text-white lead shake" style="text-shadow: 2px 2px 5px red, 4px 4px 6px yellow;"><img src="img/acesso_lista.png" alt="Acessar" width="431px" height="117px" ></a>
                     </div>
                 </div>
             </header>
@@ -67,12 +76,11 @@
                 A única lista com exclusividade e integração contínua no mercado financeiro.
                 <br>
             </p>
-            <!-- <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green"><img src="img/acesso_lista.png" alt="Acessar" width="334px" height="94px"></a> -->
         </div>
     </div>
     <!-- three-blcok -->
     <div class="container my-5 py-2">
-        <h2 class="text-center font-weight-bold my-5">Integridade, Disponibilidade e Confidencialidade para o seu negócio</h2>
+        <h2 class="text-center font-weight-bold my-5 textoPrincipios">Integridade, Disponibilidade e Confidencialidade para o seu negócio</h2>
         <div class="row">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
                 <img src="img/smart-protect-1.jpg" alt="Anti-spam" class="mx-auto">
@@ -91,17 +99,18 @@
             </div>
         </div>
     </div>
+    <div class="botaoAlertaCompra shake-opacity shake-constant"><a href="https://mpago.la/1VTXgcb" target="_blank"><img src="img/botaoCompra.png"></a></div>
     <!-- feature (skew background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+    <hr>
+    <div class="" id="feature-first">
         <div class="container my-5">
             <div class="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
-                    <h2 class="font-weight-bold">Parametrização e análise do mercado em tempo real</h2>
-                    <p class="my-4">Nossa integração contínua garante que nossos clientes recebam os melhores fornecedores, não precisando se preocupar com a filtragem e segurança, a nossa triagem e parametrização é o principal fator para assegurar e evoluir o market-share e o networking dos nossos contratantes.</p>
-                    <a type="button" href="https://mpago.la/1VTXgcb" class="button is-success my-4 font-weight-bold atlas-cta cta-green is-outlined">Assinar</a>
+                    <img src="img/exemplos.jpg" alt="Take a look inside" class="mx-auto d-block">
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
-                    <img src="img/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
+                    <img src="img/feature-2.png" width="300px" height="300px alt="Take a look inside" class="mx-auto d-block">
+                    <a href="#" onclick="window.open('https://mpago.la/1VTXgcb');return false;" class="text-white lead shake mt-2" style="text-shadow: 2px 2px 5px red, 4px 4px 6px yellow;"><img src="img/acesso_lista.png" alt="Acessar" width="627px" height="117px" ></a>
                 </div>
             </div>
         </div>
@@ -117,10 +126,10 @@
                         <br>
                         <strong>Integridade</strong> para oferecer o melhor serviço no melhor preço, <strong>disponibilidade</strong> para garantir a integração e atualização contínua da lista de forma que nossos clientes possam desfrutar do melhor a qualquer hora e <strong>confidencialidade</strong> para assegurar a exclusividade e as regras dos negócios dos nossos clientes.
                     </p>
-                    <a type="button" href="https://mpago.la/1VTXgcb" class="button is-success my-4 font-weight-bold atlas-cta cta-green is-outlined">Assinar</a>
+                    <a type="button" href="https://mpago.la/1VTXgcb" class="button is-success my-4 font-weight-bold atlas-cta cta-green is-outlined" target="_blank">Assinar</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
-                    <img src="img/feature-2.png" alt="Safe and reliable" class="mx-auto d-block" width="300px" height="300px">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MBqn8XSrdO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -128,7 +137,7 @@
 
     <!-- price table -->
     <div class="container my-5 py-2" id="price-table">
-        <h2 class="text-center font-weight-bold d-block mb-3">Valor</h2>
+        <h2 class="text-center font-weight-bold d-block mb-3">Valor Promocional!</h2>
         <div class="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
                 <!-- <h4 class="my-4">INICIAL</h4>
@@ -148,9 +157,9 @@
                     <li>Acesso Ilimitado</li>
                     <li>Suporte Ilimitado</li>
                     <li>Membros Ilimitados</li>
-                    <li>Membro Vitalício</li>
+                    <li>Assinatura Vitalícia</li>
                 </ul>
-                <a type="button" href="https://mpago.la/1VTXgcb" class="button is-success my-4 font-weight-bold atlas-cta cta-green">Assinar</a>
+                <a type="button" href="#" onclick="window.open('https://mpago.la/1VTXgcb');return false;" class="button is-success my-4 font-weight-bold atlas-cta cta-green">Assinar</a>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
                 <!-- <h4 class="my-4">PROFESSIONAL<br>ENTRERPRISE</h4>
