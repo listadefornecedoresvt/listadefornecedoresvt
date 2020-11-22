@@ -1,0 +1,16 @@
+{
+  "name": "Lista de FornecedoresVT",
+  "short_name": "ListaVT",
+  "theme_color": "#2a8b43",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "https://listadefornecedoresvt.com.br",
+  "icons": [
+      {
+          "src": "https://github.com/listadefornecedoresvt/listadefornecedoresvt/blob/master/img/logo.png?raw=true",
+          "sizes": "1024x1024",
+          "type": "image/png"
+      }
+  ]
+}
